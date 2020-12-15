@@ -1,0 +1,38 @@
+.not-found-container {
+  text-align: center;
+  padding-top: 6rem;
+}
+.not-found-container img {
+  width: 100px;
+}
+.not-found-container p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.not-found-container button {
+  position: relative;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 2.3rem;
+  font-family: 'Permanent Marker', cursive;
+  border-radius: 0.5rem;
+  background-color: #e72b75;
+  color: white;
+  transition: 0.3s;
+}
+.not-found-container button:hover {
+  background-color: #ff0267;
+  top: -0.2rem;
+  box-shadow: 10px 10px 10px 2px black;
+}
+.not-found-container button i {
+  position: relative;
+  right: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .not-found-container button {
+    width: 500px;
+  }
+}

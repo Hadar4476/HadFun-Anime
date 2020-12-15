@@ -1,0 +1,8 @@
+{
+  "kitsuApi": "https://kitsu.io/api/edge/anime",
+  "apiUrl": "https://hadfun-anime.herokuapp.com/api",
+  "kitsuHeaders": {
+    "Accept": "application/vnd.api+json",
+    "Content-Type": "application/vnd.api+json"
+  }
+}

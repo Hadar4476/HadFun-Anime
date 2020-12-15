@@ -1,0 +1,27 @@
+.top-btn {
+  position: fixed;
+  z-index: 3;
+  background-color: #e72b75;
+  left: 0;
+  top: 40%;
+  cursor: pointer;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.top-btn span {
+  position: relative;
+  padding: 0.7rem;
+}
+.top-btn span i {
+  position: relative;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  color: rgb(221, 221, 221);
+  transition: 0.3s;
+}
+.top-btn:hover span i {
+  color: white;
+}

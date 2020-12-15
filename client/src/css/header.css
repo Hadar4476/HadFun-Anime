@@ -1,0 +1,158 @@
+nav {
+  background-color: #e72b75;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+}
+
+.logos-nav {
+  display: flex;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.logos-nav .hadfun-logo {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none !important;
+  border: 2px solid #6314a8;
+}
+
+.logos-nav span {
+  position: relative;
+  font-family: 'Almost Japanese Comic';
+  font-size: 2.5rem;
+  color: white;
+  margin-top: auto;
+  top: 0.2rem;
+  left: 0.5rem;
+}
+
+.logos-nav .anime-logo {
+  position: relative;
+  width: 70px;
+  height: 25px;
+  margin-top: auto;
+  top: 0.4rem;
+  left: 1rem;
+}
+
+.shuriken-logo {
+  padding: 0.7rem;
+}
+
+.shuriken-logo img {
+  width: 40px;
+}
+
+.user-panel {
+  padding: 0.5rem;
+}
+
+.user-panel i {
+  cursor: pointer;
+  font-size: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  color: #4f5bd5;
+}
+
+.user-menu {
+  position: relative;
+  width: 100%;
+}
+
+.user-menu div {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  float: right;
+  width: 160px;
+  padding: 1rem;
+  margin: 0.1rem 0.1rem 0 0;
+  border-bottom-left-radius: 1rem;
+  border: 2px solid black;
+}
+
+.user-menu div .menu-item {
+  font-size: 1.2rem;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.user-menu div .menu-item:hover {
+  color: #4f5bd5;
+}
+
+.logo {
+  border: black 3px solid;
+  border-radius: 40px;
+  height: 50px;
+  transition-duration: 1s;
+}
+
+.logo:hover {
+  background: white;
+}
+
+.animeNavbar {
+  background: #d62976;
+}
+.signInLi {
+  padding-right: 9px;
+}
+.signInBtn {
+  background: #4f5bd5;
+  width: 110%;
+}
+
+.signUpBtn {
+  background: #962fbf;
+  width: 110%;
+}
+
+.logOutBtn {
+  background: #fa7e1e;
+}
+
+@media (max-width: 991px) {
+  .signInLi {
+    padding-right: 0px;
+    margin-right: 8px;
+  }
+  .signInBtn {
+    margin-right: 20px;
+  }
+  .signUpLi {
+    margin-right: 8px;
+  }
+  .signUpBtn {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 710px) {
+  .logo {
+    width: 160px;
+    transition-duration: 1s;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    width: 140px;
+    transition-duration: 1s;
+  }
+}
+@media (max-width: 550px) {
+  .logo {
+    width: 120px;
+    transition-duration: 1s;
+  }
+}

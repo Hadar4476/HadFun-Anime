@@ -1,0 +1,156 @@
+button:focus {
+  outline: none;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+body {
+  background-color: #feda75;
+}
+
+main {
+  min-height: 900px;
+}
+
+.home-container {
+  margin-top: 5.5rem;
+  text-align: center;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hadfun-logo {
+  width: 90%;
+}
+
+.logos-container span {
+  font-family: 'Hammersmith One', sans-serif;
+  color: black;
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+
+.anime-logo {
+  width: 70%;
+}
+
+.for {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.for span {
+  color: #e72b75;
+}
+
+.navigation-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navigation-container .animes-nav {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  background-color: #4f5bd5;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.navigation-container .animes-nav img {
+  position: relative;
+  bottom: 0.2rem;
+  width: 30px;
+}
+
+.navigation-container .animes-nav:hover {
+  top: -0.2rem;
+  box-shadow: 10px 10px 10px 2px black;
+}
+.navigation-container .animes-nav:hover img {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.navigation-container .sign-in-nav {
+  position: relative;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  background-color: #fa7e1e;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.navigation-container .sign-in-nav i {
+  position: relative;
+  right: 1rem;
+  color: black;
+}
+
+.navigation-container .sign-in-nav:hover {
+  top: -0.2rem;
+  box-shadow: 10px 10px 10px 2px black;
+}
+
+.note p {
+  color: white;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 375px) {
+  .note p {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .hadfun-logo {
+    width: 250px;
+  }
+  .for {
+    font-size: 3rem;
+    margin: 1.2rem;
+  }
+
+  .anime-logo {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logos-container {
+    flex-direction: row;
+  }
+  .navigation-container .animes-nav {
+    width: 500px;
+  }
+  .navigation-container .sign-in-nav {
+    width: 500px;
+  }
+}

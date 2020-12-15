@@ -1,0 +1,161 @@
+button:focus {
+  outline: none;
+}
+
+.sign-up-title {
+  margin-top: 4rem;
+}
+.sign-up-title h1 {
+  color: #6314a8;
+  font-family: 'Nuku Nuku';
+  font-size: 6rem;
+}
+.sign-up-form {
+  position: relative;
+  margin-top: 1.5rem;
+  padding: 4rem 1rem;
+  width: 100%;
+  height: 650px;
+  border: 4px solid #000000;
+}
+
+.form-label {
+  font-size: 1.9rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #000000;
+}
+.form-input {
+  height: 2.5rem;
+  border: solid 2px rgba(0, 0, 0, 0.315);
+  transition: 0.5s;
+}
+.form-input:focus {
+  border: solid 2px #000000;
+  box-shadow: none !important;
+}
+
+.form-input-error {
+  height: 2.5rem;
+  border: solid 2px rgba(195, 16, 16, 0.966);
+}
+
+.form-input-error:focus {
+  box-shadow: none !important;
+}
+
+.to-sign-in-anchor {
+  margin-top: 1.5rem;
+  padding-left: 0.4rem;
+}
+
+.to-sign-in-anchor a {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.to-sign-in-anchor a span {
+  color: #4f5bd5;
+  transition: 0.3s;
+}
+
+.to-sign-in-anchor a span:hover {
+  color: #5763ee;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  font-size: 1.1rem;
+  font-weight: 600;
+  visibility: visible;
+  color: red;
+}
+
+.gender-form-container {
+  padding-left: 0.5rem;
+}
+.gender-form-container p {
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.gender-form-group {
+  display: flex;
+  padding: 0.2rem;
+}
+
+.gender-form-group input {
+  width: 30px;
+  height: 30px;
+}
+.gender-form-group label {
+  position: relative;
+  left: 1rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.absolute-bottom {
+  position: absolute;
+  padding-right: 2rem;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.sign-up-btn {
+  border: solid 2px #000000;
+  background-color: #6314a8;
+  font-size: 1.8rem;
+  font-family: 'Nuku Nuku';
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+}
+
+.sign-up-btn:hover {
+  background-color: #7518c7;
+}
+
+@media screen and (min-width: 576px) {
+  .sign-up-form {
+    padding: 5.5rem 2rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    height: 700px;
+  }
+  .form-input {
+    height: 3rem;
+  }
+  .form-input-error {
+    height: 3rem;
+  }
+  .absolute-bottom {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-up-image {
+    width: 300px;
+  }
+  .to-sign-in-anchor a {
+    font-size: 1.5rem;
+  }
+  .sign-up-btn {
+    font-size: 2rem;
+    padding: 0.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sign-up-form {
+    margin-top: 2.5rem;
+    width: 60%;
+    height: 700px;
+  }
+}

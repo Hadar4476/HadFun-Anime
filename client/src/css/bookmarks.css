@@ -1,0 +1,171 @@
+.bookmarks {
+  text-align: center;
+  padding-top: 6rem;
+}
+.no-bookmarks-yet {
+  margin: 0 auto;
+}
+.no-bookmarks-yet img {
+  width: 100px;
+}
+.no-bookmarks-yet p {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.no-bookmarks-yet .animes-nav {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  background-color: #4f5bd5;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.no-bookmarks-yet .animes-nav img {
+  position: relative;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  width: 30px;
+}
+
+.no-bookmarks-yet .animes-nav:hover {
+  top: -0.2rem;
+  box-shadow: 10px 10px 10px 2px black;
+}
+.no-bookmarks-yet .animes-nav:hover img {
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* ********** SINGLE BOOKMARK *********** */
+
+.single-bookmark {
+  width: 100%;
+  height: 450px;
+  padding: 2rem 0 1rem 0;
+  margin: 0 auto;
+}
+.single-bookmark div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  width: 91%;
+  height: 91%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  border-radius: 0.5rem;
+  outline: 3px solid #fa7e1e;
+  outline-offset: -0.5rem;
+  padding: 1.5rem;
+  transition: 0.3s;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.single-bookmark div p {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+.single-bookmark div p::selection {
+  color: white;
+}
+.single-bookmark div span i {
+  position: relative;
+  bottom: 1.5rem;
+  color: rgb(214, 214, 214);
+  font-size: 3rem;
+  transition: 0.3s;
+}
+.single-bookmark div span:hover i {
+  color: white;
+}
+.single-bookmark:hover div {
+  opacity: 1;
+}
+.single-bookmark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 5px solid #e72b75;
+}
+.single-bookmark button {
+  position: absolute;
+  bottom: 0;
+  margin: 0.6rem;
+  width: 94.5%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  font-family: 'Permanent Marker', cursive;
+  border: 1px solid white;
+  background-color: #110000;
+  color: white;
+  transition: 0.3s;
+}
+.single-bookmark button:hover {
+  background-color: #c80404;
+  color: white;
+}
+.single-bookmark button i {
+  position: relative;
+  right: 0.5rem;
+  color: white;
+}
+
+@media screen and (min-width: 350px) {
+  .single-bookmark {
+    width: 320px;
+  }
+  .single-bookmark div {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .single-bookmark {
+    width: 260px;
+  }
+  .single-bookmark div {
+    width: 260px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .single-bookmark {
+    width: 320px;
+  }
+  .single-bookmark div {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .single-bookmark {
+    width: 300px;
+  }
+  .single-bookmark div {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .single-bookmark {
+    width: 260px;
+  }
+  .single-bookmark div {
+    width: 260px;
+  }
+}

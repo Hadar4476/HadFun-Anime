@@ -1,0 +1,40 @@
+how to get a single character?
+
+first send "https://kitsu.io/api/edge/anime/1" for a single anime.
+in this example its "Cowboy Bebop".
+
+then in data.attributes.relationships.characters.links.self for all characters's id. (https://kitsu.io/api/edge/anime/1/relationships/characters)
+
+to execute one character's id, access data array and fetch i.id.
+
+this id can be sent in:
+
+then https://kitsu.io/api/edge/media-characters/<character's id here>/character
+which will return the single character page:
+
+single character data:
+
+data.id = character's id
+data.attributes.canonicalName = character's name
+data.attributes.otherNames = character's nicknames
+data.attributes.description = character's description
+data.attributes.image.original = character's image
+
+how to get anime's episodes:
+
+data.relationships.episodes.links.related - "https://kitsu.io/api/edge/anime<anime's id here>/episodes".
+
+single episode data:
+
+data.id = episode's id
+data.attributes.airdate = episode aired date
+data.attributes.canonicalTitle = episode's title
+data.attributes.number = episode's number
+data.attributes.synopsis = epiosde's summary
+data.attributes.length = episode's length
+data.attributes.thumbnail.original = episode's image
+data.attributes
+data.attributes
+data.attributes
+data.attributes
+

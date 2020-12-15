@@ -1,0 +1,23 @@
+* for posterImage or coverImage:
+  sizes are - tiny,small,medium(only for posterImage),large,original
+
+
+
+
+anime.id                                                                 // for id
+anime.attributes.canonicalTitle                                // for name
+anime.attributes.synopsis                                       // for description
+anime.attributes.status                                           // for finished or ongoing
+anime.attributes.startDate                                      // for starting date
+anime.attributes.endDate                                       // for ending date
+anime.attributes.posterImage.medium                    // for images
+anime.attributes.coverImage.tiny                            // for cover
+anime.attributes.episodeCount                               // for total amount
+anime.attributes.episodeLength                              // for length
+anime.attributes.averageRating                              // for rating
+
+* for next page button - fetch res.links.next
+
+***************** optional *************
+for genres:
+fetch anime.relationships.genres.links.related -> genre.attributes.name

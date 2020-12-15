@@ -1,0 +1,47 @@
+.footer-container {
+  margin: 5rem auto 4rem auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 auto;
+  color: black;
+}
+.footer img {
+  width: 50%;
+}
+.footer span {
+  display: inline-flex;
+  margin-left: 0.5rem;
+  font-size: 2.5rem;
+  font-family: 'Almost Japanese Comic';
+}
+
+.oNline-web-link {
+  padding: 1rem;
+}
+.oNline-web-link a {
+  color: black;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+.filler {
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .footer img {
+    width: 200px;
+  }
+}

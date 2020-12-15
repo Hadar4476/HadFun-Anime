@@ -1,0 +1,338 @@
+.single-anime-page-container {
+  padding-top: 6rem;
+}
+
+/* *********** TITLE ************ */
+
+.anime-title {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.anime-title .titles {
+  display: flex;
+  flex-direction: column;
+}
+.anime-title .titles .english-title {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 2rem;
+}
+.anime-title .titles .japanese-title {
+  font-size: 1.5rem;
+}
+
+/* *********** IMAGE ************ */
+
+.anime-image {
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+.anime-image img {
+  width: 100%;
+  border: 3px solid white;
+}
+
+/* *********** FACTS ************ */
+
+.anime-facts {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0.1rem;
+}
+.anime-facts div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.anime-facts div button {
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  background-color: black;
+  transition: 0.3s;
+}
+.anime-facts div span {
+  font-size: 2.5rem;
+  color: white;
+}
+.anime-facts div span i {
+  position: relative;
+}
+
+.rates-btn button {
+  border: 2px solid #12e091;
+  color: #12e091;
+}
+.rates-btn button:hover {
+  border: 2px solid transparent;
+  background-color: #12e091;
+  color: white;
+}
+.rates-btn span i {
+  left: 0.3rem;
+  color: #12e091;
+}
+
+.episodes-btn button {
+  border: 2px solid #4f5bd5;
+  color: #4f5bd5;
+}
+.episodes-btn button::selection {
+  color: transparent;
+}
+.episodes-btn button:hover {
+  border: 2px solid transparent;
+  background-color: #4f5bd5;
+  color: white;
+}
+.episodes-btn span i {
+  left: 0.3rem;
+  color: #4f5bd5;
+}
+.status-btn button {
+  border: 2px solid #00b8ff;
+  color: #00b8ff;
+}
+.status-btn button:hover {
+  border: 2px solid transparent;
+  background-color: #00b8ff;
+  color: white;
+}
+.status-btn span i {
+  left: 0.7rem;
+  color: #00b8ff;
+}
+.started-btn button {
+  border: 2px solid #e72b75;
+  color: #e72b75;
+}
+.started-btn button:hover {
+  border: 2px solid transparent;
+  background-color: #e72b75;
+  color: white;
+}
+.started-btn span i {
+  left: 0.2rem;
+  color: #e72b75;
+}
+.ended-btn button {
+  border: 2px solid #c80404;
+  color: #c80404;
+}
+.ended-btn button:hover {
+  border: 2px solid transparent;
+  background-color: #c80404;
+  color: white;
+}
+.ended-btn span i {
+  left: 0.4rem;
+  color: #c80404;
+}
+
+.bookmarks-btn button {
+  border: 2px solid #bd00ff;
+  color: #bd00ff;
+}
+.bookmarks-btn button:hover {
+  border: 2px solid transparent;
+  background-color: #bd00ff;
+  color: white;
+}
+.bookmarks-btn span i {
+  left: 0.7rem;
+  color: #bd00ff;
+}
+
+/* *********** SYNOPSIS ************ */
+
+.anime-synopsis {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.anime-synopsis p {
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.anime-synopsis:hover {
+  background-color: #fff;
+}
+.anime-synopsis:hover p {
+  color: black;
+}
+
+/* *********** CHARACTERS ************ */
+
+.characters {
+  padding-top: 4rem;
+  text-align: center;
+}
+.characters h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: 'Permanent Marker', cursive;
+}
+.characters .character {
+  margin: 1rem auto 3rem auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 260px;
+}
+.characters .character img {
+  width: 240px;
+  height: 300px;
+}
+.characters .character p {
+  margin-top: 0.5rem;
+  color: black;
+  font-size: 1.7rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.characters-control-panel {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.characters-control-panel button {
+  position: relative;
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+}
+.characters-control-panel button span {
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+.characters-control-panel button:hover span {
+  color: white;
+}
+
+.characters-control-panel .prev {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 3px solid #12e091;
+  background-color: transparent;
+  right: 0.5rem;
+  transition: 0.3s;
+}
+.characters-control-panel .prev:hover {
+  background-color: #12e091;
+}
+.characters-control-panel .prev span {
+  color: #12e091;
+}
+
+.characters-control-panel .next {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 3px solid #bd00ff;
+  background-color: transparent;
+  left: 0.5rem;
+  transition: 0.3s;
+}
+.characters-control-panel .next:hover {
+  background-color: #bd00ff;
+}
+.characters-control-panel .next span {
+  color: #bd00ff;
+}
+
+.characters-control-panel button:disabled {
+  border: 3px solid transparent;
+}
+.characters-control-panel .next:disabled {
+  background-color: #bb00ff63;
+}
+.characters-control-panel .next:disabled span {
+  color: rgba(255, 255, 255, 0.616);
+}
+.characters-control-panel .prev:disabled {
+  background-color: #12e09171;
+}
+.characters-control-panel .prev:disabled span {
+  color: rgba(255, 255, 255, 0.616);
+}
+
+/* *********** BOOKMARK ************ */
+.bookmark {
+  margin: 5rem auto;
+  color: white;
+}
+.bookmark button {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  background-color: #6314a8;
+  border: 2px solid transparent;
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+.bookmark button:hover {
+  background-color: #7518c7;
+  border: 2px solid white;
+}
+.bookmark button:disabled,
+button:hover {
+  background-color: #6314a8ca;
+  border: 2px solid transparent;
+}
+.bookmark button i {
+  position: relative;
+  color: black;
+  right: 1rem;
+  top: 0.1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .anime-image {
+    width: 400px;
+  }
+  .anime-facts {
+    width: 400px;
+  }
+  .characters .character {
+    width: 230px;
+    height: 350px;
+  }
+  .characters .character img {
+    width: 200px;
+  }
+  .characters-control-panel {
+    width: 480px;
+  }
+  .bookmark {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .characters .character {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .anime-synopsis {
+    width: 900px;
+  }
+
+  .anime-synopsis p {
+    font-size: 2rem;
+  }
+}
