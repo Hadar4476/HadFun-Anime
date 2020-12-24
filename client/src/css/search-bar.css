@@ -46,6 +46,7 @@
 }
 .search-bar button:hover {
   background-color: #ff0267;
+  border: none;
 }
 .search-bar button i {
   font-size: 1.5rem;
