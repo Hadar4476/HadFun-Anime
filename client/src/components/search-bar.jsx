@@ -40,7 +40,7 @@ class SearchBar extends Component {
     return (
       <>
         <div className='d-none' id='dark'></div>
-        <div id='searchBar' className='search-bar'>
+        <div className='search-bar'>
           <input
             autoComplete='on'
             type='search'
@@ -55,8 +55,6 @@ class SearchBar extends Component {
             onChange={(e) => resetSearch(e.target.value)}
           />
           <button
-            id='searchBtn'
-            className=''
             onClick={() =>
               searchForAnime(document.getElementById('searchInput').value)
             }
