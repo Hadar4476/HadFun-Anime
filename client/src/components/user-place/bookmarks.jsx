@@ -55,6 +55,7 @@ class Bookmarks extends Component {
   };
 
   removeBookmark = (anime) => {
+    const { bookmarks } = this.state;
     Swal.fire({
       title: `Are you sure you want to remove "${
         anime.canonicalTitle ? anime.canonicalTitle : anime.englishTitle
@@ -65,17 +66,25 @@ class Bookmarks extends Component {
       confirmButtonText: 'Yes',
     }).then(async (result) => {
       if (result.value) {
-        Swal.fire({
-          title: `"${
-            anime.canonicalTitle ? anime.canonicalTitle : anime.englishTitle
-          }" has been removed successfully`,
-          confirmButtonColor: '#189ad3',
-          confirmButtonText: 'Ok',
-        });
-        await httpService.patch(`${apiUrl}/users/discard-bookmark/${anime.id}`);
-        setTimeout(() => {
-          return window.location.reload();
-        }, 2000);
+        try {
+          await httpService.patch(
+            `${apiUrl}/users/discard-bookmark/${anime.id}`
+          );
+          Swal.fire({
+            title: `"${
+              anime.canonicalTitle ? anime.canonicalTitle : anime.englishTitle
+            }" has been removed successfully`,
+            confirmButtonColor: '#189ad3',
+            confirmButtonText: 'Ok',
+          });
+          let tempBookmarks = [...bookmarks];
+          for (let i = 0; i < tempBookmarks.length; i++) {
+            if (tempBookmarks[i].id === anime.id) tempBookmarks.splice(i, 1);
+          }
+          this.setState({ bookmarks: tempBookmarks });
+        } catch (error) {
+          return;
+        }
       }
     });
   };
@@ -96,7 +105,7 @@ class Bookmarks extends Component {
             ))}
           </div>
         )}
-        {bookmarks && bookmarks.length === 0 && (
+        {!bookmarks.length && (
           <div className='row'>
             <div className='col'>
               <div className='no-bookmarks-yet'>
