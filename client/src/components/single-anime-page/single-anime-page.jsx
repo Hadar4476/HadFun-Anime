@@ -73,7 +73,7 @@ class SingleAnimePage extends Component {
   };
 
   bookmarkAnime = async () => {
-    const { anime, user, history } = this.state;
+    const { anime, user } = this.state;
     if (!user) {
       Swal.fire({
         title: `Seems like you are not signed in`,
@@ -83,12 +83,16 @@ class SingleAnimePage extends Component {
         confirmButtonText: 'Sign in',
       }).then((result) => {
         if (result.value) {
-          history.push('/sign-in');
+          this.props.history.push('/sign-in');
         }
       });
     } else {
-      await httpService.put(`${apiUrl}/users/bookmark`, anime);
-      this.setState({ bookmarked: true });
+      try {
+        await httpService.put(`${apiUrl}/users/bookmark`, anime);
+        this.setState({ bookmarked: true });
+      } catch (error) {
+        return;
+      }
     }
   };
 
